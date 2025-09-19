@@ -84,31 +84,58 @@ public class PracticeService {
 		}
 
 	}
-	
+
 	public void practice5() {
-		
+
 		System.out.print("문자열 : ");
 		String input = sc.nextLine();
-		
+
 		char[] arr = new char[input.length()];
-		for (int i  = 0; i < arr.length; i++) {
+		for (int i = 0; i < arr.length; i++) {
 			arr[i] = input.charAt(i);
-		}	
-		
+		}
+
 		System.out.print("문자 : ");
 		char ch = sc.next().charAt(0);
-		
+
 		int count = 0;
-		
+
 		for (int i = 0; i < arr.length; i++) {
-			if(ch == arr[i]) {
+			if (ch == arr[i]) {
 				count++;
 			}
 		}
+
+	int arr1[] = new int[count];
+	for (int x = 0; x < arr.length; x++) {
 		
-		if (count > 0) {
-			System.out.print(ch + "개수 : " + count);
+		if(ch == arr[x]) {
 		}
 	}
+
+	if(count>0)
+	{
+		System.out.print(ch + "개수 : " + count);
+	}
+}
+	
+	public void practice6() {
+		
+		System.out.print("정수 : ");
+		int input = sc.nextInt();
+		
+		for(int i = 0; i < input; i++) {
+			
+			System.out.printf("배열 %s번째 인덱스에 넣을 값 : ", i);
+			int num = sc.nextInt();
+			
+		}
+		
+		int arr[] = new int[input];
+		for(int i = 0; i < arr.length; i++) {
+			
+		}
+	}
+
 
 }
