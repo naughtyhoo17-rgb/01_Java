@@ -42,6 +42,52 @@ public class People { // 국민(사람) 클래스
 		모든 국민이 가진 공통점이 아니므로 제거 (추상화) */
 	
 	// * 기능 == 행동/동작 == method(메서드)
+	 
+	/* 캡슐화에서 사용할 간접 접근 기능(getter/setter)
+	 [접근제한자] 반환명 메서드명(매개변수) {} 
+	 
+	 name 변수의 값을 호출한 쪽으로 돌려보내주는
+	 간접 접근 기능 중 getter
+	 
+	 void : 반환할 값이 없다 (반환형(자료형)이 없다)
+	 
+	 return : 반환, 되돌려주다
+	 return; : 현재 메서드를 종료하고 호출한 쪽으로 되돌아감.
+	 return 값/변수 : 현재 메서드를 종료하고 값/변수 가지고 
+	 				 호출한 쪽으로 되돌아감.
+	 */
+	
+	//public String getName() {
+		//return name;
+		/* name 이라는 반환값 있음 
+		   반환형 : 반환되는 값의 자료형 */
+		
+	//}
+	
+	//public void setName(String name) {
+		//this.name = name; // this는 현재 객체란 의미
+	//} 
+	
+	/* getter() : 반환형이 무조건 있음
+	   getter는 필드에 작성된 변수값을 호출한 쪽으로 되돌려 주는 것
+	   -> 변수값은 자료형이 있음
+	   -> 그 변수를 되돌려준다면 당연히 반환형도 존재! */
+	
+	/* setter() : 반환형이 없음
+	   setter는 전달인자에 작성된 값을 통해
+	   매개변수로 들어온 값을 객체의 필드에 세팅하는 역할.
+	   -> 매개변수가 항상 있음(==전달인자 값)
+	   -> 전달인자에는 자료형이 있음 -> 매개변수도 자료형 있음
+	   -> 매개변수 작성법 : (자료형 매개변수명)
+	   -> 단순히 전달값으로 필드에 값을 세팅하는 역할이기 때문에
+	   호출한 쪽으로 되돌려 줄 값은 없음.
+	   -> 반환형도 없음. thus void */
+	
+	
+	/* alt + s 또는 상단메뉴 Source
+	  -> Generate Getters and Setters 클릭
+	  -> selectAll -> Generate 클릭 */
+	
 	public void tax() {
 		System.out.println("세금을 냅니다...");
 	}
@@ -49,10 +95,53 @@ public class People { // 국민(사람) 클래스
 	public void vote () {
 		System.out.println("투표를 합니다...");
 	}
-	 
-	/* 캡슐화에서 사용할 간접 접근 기능(getter/setter)
-	 [접근제한자] 반환명 메서드명() {} */
 	
+	public String getName() {
+		return name;
+	}
 	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public char getGender() {
+		return gender;
+	}
+	
+	public void setGender(char gender) {
+		this.gender = gender;
+	}
+	
+	public String getpNo() {
+		return pNo;
+	}
+	
+	public void setpNo(String pNo) {
+		this.pNo = pNo;
+	}
+	
+	public String getAddress() {
+		return address;
+	}
+	
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+	public String getPhone() {
+		return phone;
+	}
+	
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+	
+	public void setAge(int age) {
+		this.age = age;
+	}
 	
 }
