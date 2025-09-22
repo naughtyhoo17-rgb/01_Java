@@ -122,6 +122,8 @@ public class Array2Example {
 		
 	}
 	
+	
+	
 	public void ex3() {
 		/* 가변 배열
 		  2차원 배열 생성 시 마지막 배열 차수(열)을 지정하지 않고
