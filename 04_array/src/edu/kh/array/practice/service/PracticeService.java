@@ -281,6 +281,34 @@ public class PracticeService {
 			arr [i] = input.charAt(i);
 		}
 		
+		int count = 0;
+		
+		System.out.print("문자열에 있는 문자 : ");
+		
+		for(int i = 0; i < arr.length; i++) {
+			
+			boolean flag = true;
+			
+			for(int x = 0; x < i; x++) {
+				if(arr[i] == arr[x]) {
+					flag = false;
+					break;
+				}
+			}
+			
+			if(flag) {
+				if(i==0) {
+					System.out.print(arr[i]);
+				} else {
+					System.out.print(", " + arr[i]);
+				}
+				
+				count++;
+			}
+		}
+		
+		System.out.println();
+		System.out.println("문자 개수 : " + count);
 		
 	}
 	public void practice14() {
