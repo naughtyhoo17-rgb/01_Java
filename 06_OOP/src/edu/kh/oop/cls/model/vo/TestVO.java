@@ -12,5 +12,5 @@ class TestVO {
 		System.out.println(std.v2);
 		System.out.println(std.v3);
 		
-	}
+	} 
 }

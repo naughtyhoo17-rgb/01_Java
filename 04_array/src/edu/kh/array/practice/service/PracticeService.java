@@ -124,18 +124,23 @@ public class PracticeService {
 		
 		System.out.print("정수 : ");
 		int input = sc.nextInt();
+		int arr[] = new int[input];
+		int sum = 0;
 		
 		for(int i = 0; i < input; i++) {
 			
 			System.out.printf("배열 %s번째 인덱스에 넣을 값 : ", i);
 			int num = sc.nextInt();
+			arr[i] = num;
+			sum += num;
+		}
+		
+		for(int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
 			
 		}
 		
-		int arr[] = new int[input];
-		for(int i = 0; i < arr.length; i++) {
-			
-		}
+		System.out.println("\n총 합 : " + sum);
 	}
 	
 	public void practice7() {
@@ -202,7 +207,17 @@ public class PracticeService {
 	}
 	
 	public void practice9() {
+		int arr[] = new int[10];
 		
+		for(int i = 0; i < 10; i++) {
+		int num = (int)(Math.random() * 10 + 1);
+		arr[i] = num;
+		}
+		System.out.print("발생한 난수 : ");
+		for(int i = 0; i < arr.length; i++) {
+		System.out.print(arr[i] + " ");
+		
+		}
 	}
 	
 	public void practice10() {
@@ -236,6 +251,38 @@ public class PracticeService {
 		System.out.println("최소값 : " + min);
 	}
 	
+	public void practice11() {
+		
+		int arr[] = new int[10];
+		
+		for(int i = 0; i < 10; i++) {
+			int random = (int)(Math.random() *10 + 1);
+			arr [i] = random;
+			
+			for(int x = 0; x < i; x++) {
+				if(random == arr[x]) {
+					i--;
+					break;
+					}
+			}
+		}
+		
+		for(int i = 0; i < arr.length; i++) {
+		System.out.print(arr[i] + " ");
+		}
+	}
+	
+	public void practice13() {
+		System.out.print("문자열 : ");
+		String input = sc.next();
+		char arr[] = new char[input.length()];
+		
+		for(int i = 0; i < arr.length; i++) {
+			arr [i] = input.charAt(i);
+		}
+		
+		
+	}
 	public void practice14() {
 		
 		// 1.첫 배열의 크기 지정
