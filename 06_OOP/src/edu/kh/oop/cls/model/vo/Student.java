@@ -15,9 +15,22 @@ public class Student { // 클래스 선언부
 	  protected int v2 = 20; // 후손 클래스까지
 	  int v3 = 30; // (default) 같은 패키지 내까지
 	  private int v4 = 40; // 해당 클래스 내부에서만 
+	  
+	// static 예약어
+	public static String schoolName = "KH고등학교";
+	
+	// final 예약어
+	private final int TEMP1 = 100;
+	/* getter만 만들어진 이유 : final 예약어가 붙은 상수는
+	 재대입이 불가능해 setter를 굳이 만들어주지 않음. 
+	 억지로 만들어도 에러 발생 */
+	public int getTEMP1() {
+		return TEMP1;
+	}
 	 
-	// 2. 생성자
+	// 2. 생성자 -> 다른 클래스에서
 	// 3. 메서드 
+	
 	public void ex() {
 		// 필드 접근제한자 확인하기
 		// v1 ~ v4 모두 Student 클래스 내부에서 생성된 변수
